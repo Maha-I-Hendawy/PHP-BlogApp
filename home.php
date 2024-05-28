@@ -14,6 +14,23 @@
 	<title>Home Page</title>
 </head>
 <body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="home.php">Blogie</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li><a href="home.php">Home</a></li>
+	      <li><a href="#">About</a></li>
+	      <li><a href="#">Services</a></li>
+	       <li><a href="#">Products</a></li>
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+	      <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>   
+	  </div>
+	</nav>
 	<div class="container">
 		<div class="jumbotron text-center">
 			<h1>Home Page</h1>
@@ -24,8 +41,8 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		    </p>
-		    <a href="#" class="btn btn-primary">Sign Up</a>
-		    <a href="#" class="btn btn-info">Login</a>	
+		    <a href="signup.php" class="btn btn-primary">Sign Up</a>
+		    <a href="login.php" class="btn btn-info">Login</a>	
 		</div>
 
 		

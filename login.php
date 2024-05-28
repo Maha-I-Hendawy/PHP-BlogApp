@@ -1,3 +1,5 @@
+<?php require 'settings.php' ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,16 +31,20 @@
   	$username = $_POST['username'];
   	$password = $_POST['password'];
 
-  	if($username == 'Kiki' && $password == '123'){
 
-  		echo 'Welcome '.$username;
-  		header('Location: profile.php');
-  	}
-  	else {
 
-  		echo 'Check Email and Password';
-  	}
+  	$stmt = $conn->prepare("SELECT username, password FROM users WHERE username=? && password=?");
+		$stmt->execute([$username, $password]); 
+    while ($row = $stmt->fetch()) {
+    echo "Hello, ".$row['username']."<br />\n";
+    header("Location: profile.php");
+
   }
+
+
+}
+		
+  
 
 
 ?>

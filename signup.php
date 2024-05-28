@@ -1,3 +1,4 @@
+<?php require 'settings.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,9 +37,10 @@
   	$confirm_password = $_POST['confirm_password'];
 
   	if($password == $confirm_password){
+        $sql = "INSERT INTO users (username, email, password) VALUES (?,?,?)";
+				$conn->prepare($sql)->execute([$username, $email, $password]);
 
-  	
-  		echo 'User info added';
+				$conn = null;
   		header('Location: login.php');
   	}
   	else {
