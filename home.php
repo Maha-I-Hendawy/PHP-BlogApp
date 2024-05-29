@@ -14,23 +14,7 @@
 	<title>Home Page</title>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <a class="navbar-brand" href="home.php">Blogie</a>
-	    </div>
-	    <ul class="nav navbar-nav">
-	      <li><a href="home.php">Home</a></li>
-	      <li><a href="#">About</a></li>
-	      <li><a href="#">Services</a></li>
-	       <li><a href="#">Products</a></li>
-	    </ul>
-	    <ul class="nav navbar-nav navbar-right">
-	      <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-	      <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-	    </ul>   
-	  </div>
-	</nav>
+	<?php require 'includes/_nav.php' ?>
 	<div class="container">
 		<div class="jumbotron text-center">
 			<h1>Home Page</h1>
