@@ -16,22 +16,30 @@
 </head>
 <body>
 	<?php require 'includes/_nav.php' ?>
-	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
-		<label>Username:</label>
-		<input type="text" name="username">
-		<br>
-		<label>Email:</label>
-		<input type="email" name="email">
-		<br>
-		<label>Password:</label>
-		<input type="password" name="password">
-		<br>
-		<label>Confirm Password</label>
-		<input type="password" name="confirm_password">
-		<br>
-		<input type="submit" value="Sign Up">
-	</form>
+	<div class="container">
+	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+		<div class="form-group">
+    <label for="username">Username:</label>
+    <input type="text" class="form-control" id="username" name="username">
+  </div>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" name="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" name="password">
+  </div>
+  <div class="form-group">
+    <label for="confirm_pwd">Confirm Password:</label>
+    <input type="password" class="form-control" id="confirm_pwd" name="confirm_password">
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
 
 </body>
 </html>

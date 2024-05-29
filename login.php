@@ -17,18 +17,23 @@
 </head>
 <body>
 	<?php require 'includes/_nav.php' ?>
+	<div class="container">
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-
-		<label>Username:</label>
-		<input type="text" name="username">
-		<br>
-		
-		<label>Password:</label>
-		<input type="password" name="password">
-		<br>
-		
-		<input type="submit" value="Login">
-	</form>
+		<div class="form-group">
+    <label for="username">Username:</label>
+    <input type="text" class="form-control" id="username" name="username">
+  </div>
+ 
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" name="password">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
 
 </body>
 </html>
