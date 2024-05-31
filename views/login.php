@@ -1,4 +1,4 @@
-<?php require 'settings.php' ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,63 +12,30 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title>Sign Up</title>
+	<title></title>
 </head>
 <body>
 	<?php require 'includes/_nav.php' ?>
-
 	<div class="container">
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 		<div class="form-group">
     <label for="username">Username:</label>
     <input type="text" class="form-control" id="username" name="username">
   </div>
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email" name="email">
-  </div>
+ 
   <div class="form-group">
     <label for="pwd">Password:</label>
     <input type="password" class="form-control" id="pwd" name="password">
   </div>
-  <div class="form-group">
-    <label for="confirm_pwd">Confirm Password:</label>
-    <input type="password" class="form-control" id="confirm_pwd" name="confirm_password">
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
   </div>
- 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
-
 
 </body>
 </html>
 
 
-<?php
-
-  if($_SERVER['REQUEST_METHOD'] == "POST"){
-
-  	$username = $_POST['username'];
-  	$email = $_POST['email'];
-  	$password = $_POST['password'];
-  	$confirm_password = $_POST['confirm_password'];
-
-  	if($password == $confirm_password){
-        $sql = "INSERT INTO users (username, email, password) VALUES (?,?,?)";
-				$conn->prepare($sql)->execute([$username, $email, $password]);
-
-				$conn = null;
-  		header('Location: login.php');
-  	}
-  	else {
-
-  		echo "Passwords don't match";
-  	}
-
-
-
-  }
-
-
-?>
+<?php require '../controllers/login.php'; ?>

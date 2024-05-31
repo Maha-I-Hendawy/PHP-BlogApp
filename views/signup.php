@@ -1,5 +1,3 @@
-<?php require 'settings.php' ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,54 +11,37 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title></title>
+	<title>Sign Up</title>
 </head>
 <body>
 	<?php require 'includes/_nav.php' ?>
+
 	<div class="container">
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 		<div class="form-group">
     <label for="username">Username:</label>
     <input type="text" class="form-control" id="username" name="username">
   </div>
- 
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" name="email">
+  </div>
   <div class="form-group">
     <label for="pwd">Password:</label>
     <input type="password" class="form-control" id="pwd" name="password">
   </div>
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
+  <div class="form-group">
+    <label for="confirm_pwd">Confirm Password:</label>
+    <input type="password" class="form-control" id="confirm_pwd" name="confirm_password">
   </div>
+ 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
+
 
 </body>
 </html>
 
 
-<?php
-
-  if($_SERVER['REQUEST_METHOD'] == "POST"){
-
-  	$username = $_POST['username'];
-  	$password = $_POST['password'];
-
-
-
-  	$stmt = $conn->prepare("SELECT username, password FROM users WHERE username=? && password=?");
-		$stmt->execute([$username, $password]); 
-    while ($row = $stmt->fetch()) {
-    echo "Hello, ".$row['username']."<br />\n";
-    $_SESSION['username'] = $username;
-    header("Location: profile.php");
-
-  }
-
-
-}
-		
-  
-
-
-?>
+<?php require '../controllers/signup.php'; ?>
