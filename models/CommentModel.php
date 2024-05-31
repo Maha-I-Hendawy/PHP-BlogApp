@@ -3,23 +3,27 @@
 
 class Comment {
 
-	public string $comment;
-	public int $author;
-	public int $post;
+	public $comment;
+	public $author;
+	public $post;
 
 
-	public function __constructor(string $commentcom, int $commentauthor, int $commentpost){
+	function __construct($comment, $author, $post){
 
 
-		$comment = $this->commentcom;
-		$author = $this->commentauthor;
-		$post = $this->commentpost;
+		$this->comment = $comment;
+		$this->author = $author;
+		$this->post = $post;
 
 
 	}
 
-	public function commentinfo(){
+	function commentinfo(){
 
-		echo this->$comment;
+		echo $this->comment;
 	}
 }
+
+$comment = new Comment("this is a text", 3, 3);
+
+$comment->commentinfo();

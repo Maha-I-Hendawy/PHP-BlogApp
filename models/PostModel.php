@@ -2,23 +2,28 @@
 
 class Post {
 
-	public string $title;
+	public $title;
 
-	public string $content;
+	public $content;
 
-	public int $author;
+	public $author;
 
 
-	public function __constructor(string $posttitle, string $postcontent, int $postauthor){
+	function __construct($title, $content, $author){
 
-		$title = $this->posttitle;
-		$content = $this->postcontent;
-		$author = $this->postauthor;
+		$this->title = $title;
+		$this->content = $content;
+		$this->author = $author;
 
 	}
 
-	public function postinfo(){
+	function postinfo(){
 
-		echo this->$title;
+		echo $this->title;
 	}
 }
+
+
+$post = new Post("title", "this is a content", 3);
+
+$post->postinfo();

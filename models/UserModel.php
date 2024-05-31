@@ -2,22 +2,26 @@
 
 class User {
 
-	public string $username;
+	public $username;
 
-	public string $email;
+	public $email;
 
-	public string $password;
+	public $password;
 
 
-	public function __constructor(string $userusername, string $useremail, string $userpassword){
+	function __construct($username, $email, $password){
 
-		$username = $this->userusername;
-		$email = $this->email;
-		$password = $this->password;
+		$this->username = $username;
+		$this->email = $email;
+		$this->password = $password;
 	}
 
-	public function userinfo(){
+	function userinfo(){
 
 		echo $this->username . ' ' . $this->email;
 	}
 }
+
+
+
+?>

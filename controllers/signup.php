@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
   		$user = new User($username, $email, $password);
   		
         $sql = "INSERT INTO users (username, email, password) VALUES (?,?,?)";
-				$conn->prepare($sql)->execute([$username, $email, $password]);
+				$conn->prepare($sql)->execute([$user->username, $user->email, $user->password]);
 
 				$conn = null;
   		header('Location: login.php');
