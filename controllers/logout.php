@@ -3,12 +3,12 @@
   session_start();
 
  
-  if (isset($_SESSION['username']) && $_SESSION['loggedin'] == true) {
-    session_unset();
+  if (isset($_SESSION['username'])) {
+    
     session_destroy();
-    header("Location: login.php");
+    header('Location: ../views/login.php');
 } else {
-    echo "Please login";
+    echo "Please Login";
 }
 
 

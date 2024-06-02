@@ -35,7 +35,7 @@
     <input type="password" class="form-control" id="confirm_pwd" name="confirm_password">
   </div>
  
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Sign Up</button>
 </form>
 </div>
 

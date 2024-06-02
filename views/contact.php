@@ -28,19 +28,16 @@
     <input type="email" class="form-control" id="email" name="email">
   </div>
   <div class="form-group">
-	  <label for="comment">Comment:</label>
-	  <textarea class="form-control" rows="5" id="comment"></textarea>
+	  <label for="comment">Message:</label>
+	  <textarea class="form-control" rows="5" id="comment" name="msg"></textarea>
 	</div> 
 	<br>
  
   <button type="submit" class="btn btn-primary">Send</button>
 </form>
-		
-		
+</div>
 
-
-
-	</div>
+<?php require '../controllers/contact.php'; ?>
 
 </body>
 </html>
