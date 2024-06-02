@@ -18,6 +18,7 @@
 	<div class="container">
 		<h1>Profile Page</h1>
 		<a href="../controllers/logout.php" class="btn btn-info">Logout</a>	
+		<a href="../views/createpost.php" class="btn btn-info">Post</a>	
 	</div>
 	
 	

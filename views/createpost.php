@@ -1,3 +1,9 @@
+<?php 
+
+ 
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,6 +37,8 @@
  
   <button type="submit" class="btn btn-primary">Post</button>
 </form>
+
+<?php require '../controllers/createpost.php'; ?>
 
 </body>
 </html>
