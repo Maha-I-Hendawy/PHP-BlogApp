@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,17 +12,29 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title></title>
+	<title>Dashboard</title>
 </head>
 <body>
-	<?php require 'includes/_nav.php' ?>
-	<div class="container">
-		<h1>Profile Page</h1>
-		<a href="../controllers/logout.php" class="btn btn-info">Logout</a>	
-		<a href="../views/createpost.php" class="btn btn-info">Post</a>	
-	</div>
-	
-	
+</body>
+    <?php require 'includes/_nav.php' ?>
+	<?php 
+
+      require '../settings.php';
+
+      $sql = "SELECT username, title FROM users inner join posts on users.user_id = posts.user_id";
+		 $stmt = $conn->prepare($sql);
+		 $stmt->execute();
+         while ($row = $stmt->fetch()) {
+         	echo "<div class='container'>";
+		    echo "<h2>".$row["title"]."</h2>"."Author: ".$row["username"]."<br />\n";
+		    echo "</div>";
+		     }
+
+				$conn = null;
+
+
+
+	?>
 
 </body>
 </html>

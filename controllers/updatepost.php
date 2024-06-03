@@ -17,16 +17,22 @@ require '../settings.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-	
 
-	$title = $_POST["title"];
-	$content = $_POST["content"];
+      $url = $_SERVER['REQUEST_URI'];
+      $url1 = parse_url($url);
+      parse_str($url1['query'], $params);
 
-	$sql = "UPDATE SET title=?, content=? WHERE post_id =? and user_id=?";
-				$conn->prepare($sql)->execute([$title, $content, $post_id, $user_id]);
+      $post_id = $params["post_id"];
 
-				$conn = null;
-  		header('Location: profile.php');
+
+	  $title = $_POST["title"];
+	  $content = $_POST["content"];
+
+   	$sql = "UPDATE posts SET title=?, content=? WHERE post_id =? and user_id=?";
+		$conn->prepare($sql)->execute([$title, $content, $post_id, $user_id]);
+
+		$conn = null;
+  	header('Location: profile.php');
 }
 
 ?>

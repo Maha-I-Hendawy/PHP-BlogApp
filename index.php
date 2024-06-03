@@ -32,6 +32,25 @@ switch($request){
 	    require __DIR__.'views/profile.php';
 	    break;
 
+	case '/post':
+	    require __DIR__.'views/createpost.php';
+	    break;
+
+	case '/dashboard':
+	    require __DIR__.'views/dashboard.php';
+	    break;
+
+	case '/onepost':
+	    require __DIR__."views/onepost.php";
+	    break;
+
+	case '/updatepost':
+	    require __DIR__."views/updatepost.php";
+	    break;
+
+	case '/deletepost':
+	     require __DIR__."views/deletepost.php"
+
 
 	default:
 	    http_response_code(404);
