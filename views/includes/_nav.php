@@ -10,6 +10,7 @@
 	      <li><a href="services.php">Services</a></li>
 	       <li><a href="products.php">Products</a></li>
 	       <li><a href="contact.php">Contact Us</a></li>
+	        <li><a href="dashboard.php">Dashboard</a></li>
 	    </ul>
 	    <ul class="nav navbar-nav navbar-right">
 	      <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
