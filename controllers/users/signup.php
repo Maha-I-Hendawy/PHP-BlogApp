@@ -1,8 +1,8 @@
 <?php 
 
-require '../settings.php';
+require '../../settings.php';
 
-require '../models/UserModel.php';
+require '../../models/UserModel.php';
 
 
 

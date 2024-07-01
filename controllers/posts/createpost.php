@@ -9,12 +9,12 @@
     $username = $_SESSION["username"];
 } else {
 
-    header("Location: ../views/login.php");
+    header("Location: ../../views/login.php");
 }
 
 
-require '../settings.php';
-require '../models/PostModel.php';
+require '../../settings.php';
+require '../../models/PostModel.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
