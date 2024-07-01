@@ -33,7 +33,7 @@
 </head>
 <body>
 </body>
-    <?php require 'includes/_nav.php' ?>
+    <?php require '../includes/_nav_user_in_session.php' ?>
 	<?php
 
       /*require '../settings.php';

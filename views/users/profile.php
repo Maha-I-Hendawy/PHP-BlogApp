@@ -14,7 +14,7 @@
 	<title></title>
 </head>
 <body>
-	<?php require 'includes/_nav.php' ?>
+	<?php require '../includes/_nav_user_in_session.php' ?>
 	<div class="container">
 		<h1>Profile Page</h1>
 		<a href="../../controllers/logout.php" class="btn btn-info">Logout</a>	

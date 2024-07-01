@@ -34,7 +34,7 @@
 </form>
 </div>
 
-<?php require '../controllers/updatepost.php'; ?>
+<?php require '../controllers/posts/updatepost.php'; ?>
 
 </body>
 </html>

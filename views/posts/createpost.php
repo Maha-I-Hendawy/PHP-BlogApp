@@ -17,7 +17,7 @@
 	<title>Create Post</title>
 </head>
 <body>
-	<?php require '../includes/_nav.php' ?>
+	<?php require '../includes/_nav_user_in_session.php' ?>
 	<div class="container">
 
 		<h1 class="text-center">Create Post</h1>
@@ -35,7 +35,7 @@
   <button type="submit" class="btn btn-primary">Post</button>
 </form>
 
-<?php require '../../controllers/createpost.php'; ?>
+<?php require '../../controllers/posts/createpost.php'; ?>
 
 </body>
 </html>

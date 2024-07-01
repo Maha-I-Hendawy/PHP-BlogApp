@@ -5,35 +5,35 @@ $request = $_SERVER['REQUEST_URI'];
 switch($request){
 
 	case '/':
-	    require __DIR__.'views/home.php';
+	    require __DIR__.'views/website/home.php';
 	    break;
 
 	case '/about':
-	    require __DIR__.'views/about.php';
+	    require __DIR__.'views/website/about.php';
 	    break;
 
 	case '/services':
-	    require __DIR__.'views/services.php';
+	    require __DIR__.'views/website/services.php';
 	    break;
 
 	case '/products':
-	    require __DIR__.'views/products.php';
+	    require __DIR__.'views/website/products.php';
 	    break;
 
 	case '/signup':
-	    require __DIR__.'views/signup.php';
+	    require __DIR__.'views/users/signup.php';
 	    break;
 
 	case '/login':
-	    require __DIR__.'views/login.php';
+	    require __DIR__.'views/users/login.php';
 	    break;
 
 	case '/profile':
-	    require __DIR__.'views/profile.php';
+	    require __DIR__.'views/users/profile.php';
 	    break;
 
 	case '/post':
-	    require __DIR__.'views/createpost.php';
+	    require __DIR__.'views/posts/createpost.php';
 	    break;
 
 	case '/dashboard':
@@ -41,15 +41,15 @@ switch($request){
 	    break;
 
 	case '/onepost':
-	    require __DIR__."views/onepost.php";
+	    require __DIR__."views/posts/onepost.php";
 	    break;
 
 	case '/updatepost':
-	    require __DIR__."views/updatepost.php";
+	    require __DIR__."views/posts/updatepost.php";
 	    break;
 
 	case '/deletepost':
-	     require __DIR__."views/deletepost.php";
+	     require __DIR__."views/posts/deletepost.php";
 	     break;
 
 

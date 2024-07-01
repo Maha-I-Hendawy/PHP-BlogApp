@@ -17,7 +17,7 @@
 	<title></title>
 </head>
 <body>
-	<?php require 'includes/_nav.php' ?>
+	<?php require '../includes/_nav.php' ?>
 	<div class="container">
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 		<div class="form-group">
@@ -40,4 +40,4 @@
 </html>
 
 
-<?php require '../../controllers/login.php'; ?>
+<?php require '../../controllers/users/login.php'; ?>

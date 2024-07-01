@@ -9,7 +9,7 @@
     $username = $_SESSION["username"];
 } else {
 
-    header("Location: ../../views/login.php");
+    header("Location: ../../views/users/login.php");
 }
 
 

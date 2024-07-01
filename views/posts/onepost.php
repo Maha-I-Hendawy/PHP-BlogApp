@@ -7,7 +7,7 @@
 
 } else {
 
-    header("Location: views/login.php");
+    header("Location: views/users/login.php");
 }
 ?>
 <!DOCTYPE html>
@@ -27,7 +27,7 @@
 </head>
 <body>
 
-    <?php require '../includes/_nav.php' ?>
+    <?php require '../includes/_nav_in_session.php' ?>
 	<?php 
 
       require '../settings.php';
