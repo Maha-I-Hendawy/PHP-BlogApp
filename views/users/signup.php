@@ -14,7 +14,7 @@
 	<title>Sign Up</title>
 </head>
 <body>
-	<?php require 'includes/_nav.php' ?>
+	<?php require '../includes/_nav.php' ?>
 
 	<div class="container">
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
@@ -44,4 +44,4 @@
 </html>
 
 
-<?php require '../controllers/signup.php'; ?>
+<?php require '../../controllers/signup.php'; ?>

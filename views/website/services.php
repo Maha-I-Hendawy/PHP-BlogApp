@@ -11,12 +11,12 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title>Products Page</title>
+	<title>Services Page</title>
 </head>
 <body>
-	<?php require 'includes/_nav.php' ?>
+	<?php require '../includes/_nav.php' ?>
 	<div class="container">
-		<h1>Products Page</h1>
+		<h1>Services Page</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

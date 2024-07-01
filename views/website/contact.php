@@ -1,5 +1,5 @@
 <?php 
-        require '../functions.php';
+       
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@
 	<title>Contact Us Page</title>
 </head>
 <body>
-	<?php require 'includes/_nav.php' ?>
+	<?php require '../includes/_nav.php' ?>
 	<div class="container">
 
 		<h1 class="text-center">Contact Us</h1>
@@ -40,7 +40,7 @@
 </form>
 </div>
 
-<?php require '../controllers/contact.php'; ?>
+<?php require '../../controllers/contact.php'; ?>
 
 </body>
 </html>

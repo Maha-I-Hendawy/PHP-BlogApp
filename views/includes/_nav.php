@@ -10,7 +10,6 @@
 	      <li><a href="services.php">Services</a></li>
 	       <li><a href="products.php">Products</a></li>
 	       <li><a href="contact.php">Contact Us</a></li>
-	        <li><a href="dashboard.php">Dashboard</a></li>
 	    </ul>
 	    <ul class="nav navbar-nav navbar-right">
 	      <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
@@ -18,9 +17,8 @@
 	    </ul>   
 	  </div>
 	</nav>
-
-
-<!--<nav class="navbar navbar-inverse">
+<!--
+<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <a class="navbar-brand" href="home.php">Blogie</a>
@@ -31,9 +29,11 @@
 	      <li><a href="createpost.php">Post</a></li>
 	    </ul>
 	    <ul class="nav navbar-nav navbar-right">
-	      <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
-	      <li><a href="controllers/logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+	      <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span></a></li>
+	      <li><a href="blog/controllers/logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 	    </ul>   
 	  </div>
 	</nav>
+
 -->
+

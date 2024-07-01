@@ -1,5 +1,5 @@
 <?php 
-        require '../functions.php';
+       
 	?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@
 	<title>Home Page</title>
 </head>
 <body>
-	<?php require 'includes/_nav.php' ?>
+	<?php require '../includes/_nav.php' ?>
 	<div class="container">
 		<div class="jumbotron text-center">
 			<h1>Home Page</h1>

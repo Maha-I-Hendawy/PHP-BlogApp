@@ -1,6 +1,5 @@
 <?php 
-        require '../functions.php';
-       
+        
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,28 +14,30 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title>Create Post</title>
+	<title></title>
 </head>
 <body>
 	<?php require 'includes/_nav.php' ?>
 	<div class="container">
-
-		<h1 class="text-center">Create Post</h1>
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-    <div class="form-group">
-    <label for="title">Title:</label>
-    <input type="text" class="form-control" id="username" name="title">
+		<div class="form-group">
+    <label for="username">Username:</label>
+    <input type="text" class="form-control" id="username" name="username">
   </div>
-  <div class="form-group">
-	  <label for="content">Content:</label>
-	  <textarea class="form-control" rows="5" id="comment" name="content"></textarea>
-	</div> 
-	<br>
  
-  <button type="submit" class="btn btn-primary">Post</button>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" name="password">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button>
 </form>
-
-<?php require '../controllers/createpost.php'; ?>
+</div>
 
 </body>
 </html>
+
+
+<?php require '../../controllers/login.php'; ?>

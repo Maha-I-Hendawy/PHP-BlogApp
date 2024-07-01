@@ -11,19 +11,17 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title>Services Page</title>
+	<title></title>
 </head>
 <body>
 	<?php require 'includes/_nav.php' ?>
 	<div class="container">
-		<h1>Services Page</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h1>Profile Page</h1>
+		<a href="../../controllers/logout.php" class="btn btn-info">Logout</a>	
+		<a href="../views/createpost.php" class="btn btn-info">Post</a>	
 	</div>
+	
+	
 
 </body>
 </html>

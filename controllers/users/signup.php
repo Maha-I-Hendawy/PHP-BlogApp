@@ -16,7 +16,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 
   	if($password == $confirm_password){
-  		$user = new User($username, $email, $password);
+  		$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+  		$user = new User($username, $email, $hashed_password);
   		
         $sql = "INSERT INTO users (username, email, password) VALUES (?,?,?)";
 				$conn->prepare($sql)->execute([$user->username, $user->email, $user->password]);

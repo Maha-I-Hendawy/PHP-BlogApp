@@ -1,4 +1,6 @@
-
+<?php 
+       
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,13 +14,13 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title>Update Post</title>
+	<title>Create Post</title>
 </head>
 <body>
-	<?php require 'includes/_nav.php' ?>
+	<?php require '../includes/_nav.php' ?>
 	<div class="container">
 
-		<h1 class="text-center">Updatepost</h1>
+		<h1 class="text-center">Create Post</h1>
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
     <div class="form-group">
     <label for="title">Title:</label>
@@ -30,11 +32,10 @@
 	</div> 
 	<br>
  
-  <button type="submit" class="btn btn-primary">Update</button>
+  <button type="submit" class="btn btn-primary">Post</button>
 </form>
-</div>
 
-<?php require '../controllers/updatepost.php'; ?>
+<?php require '../../controllers/createpost.php'; ?>
 
 </body>
 </html>
