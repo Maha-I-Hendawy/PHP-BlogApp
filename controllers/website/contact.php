@@ -8,7 +8,7 @@
 
   	$message = $_POST['msg'];
 
-  	header("Location: ../views/home.php");
+  	header("Location: ../views/website/home.php");
 
 
 

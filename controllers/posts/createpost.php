@@ -3,7 +3,7 @@
  session_start();
 
  
-  if (isset($_SESSION['username'])) {
+  if (isset($_SESSION['username']) && isset($_SESSION["user_id"])) {
     
     $user_id = $_SESSION['user_id'];
     $username = $_SESSION["username"];
@@ -27,7 +27,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 				$conn->prepare($sql)->execute([$post->title, $post->content, $post->author]);
 
 				$conn = null;
-  		header('Location: profile.php');
+  		header('Location: createpost.php');
 }
 
 

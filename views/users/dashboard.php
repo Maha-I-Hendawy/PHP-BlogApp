@@ -7,11 +7,11 @@
 
         	$user = $_SESSION['username'];
 
-        	echo $user;
+        	
         }
         else {
 
-        	echo "user is not in session";
+        	header("Location: ../../views/users/login.php");
         }
 
 
@@ -36,7 +36,9 @@
     <?php require '../includes/_nav_user_in_session.php' ?>
 	<?php
 
-      /*require '../settings.php';
+	echo "<p>Hello, ". $_SESSION['username'] . "</p>";
+
+      require '../../settings.php';
 
       $sql = "SELECT username, title FROM users inner join posts on users.user_id = posts.user_id";
 		 $stmt = $conn->prepare($sql);
@@ -49,7 +51,7 @@
 
 				$conn = null;
 
-		*/
+		
 
 
 

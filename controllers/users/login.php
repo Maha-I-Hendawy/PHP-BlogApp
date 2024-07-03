@@ -17,6 +17,8 @@
     if($stmt->rowCount() > 0){
 
       $check = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+      $row_id = $check[0]["user_id"];
     
       $row_username = $check[0]['username'];
       $row_password = $check[0]["password"];
@@ -24,6 +26,8 @@
       //echo $row_password;
 
       if(password_verify($password, $row_password)){
+
+            $_SESSION['user_id'] = $row_id;
 
            $_SESSION['username'] = $row_username;
            header("Location: dashboard.php");
@@ -33,11 +37,6 @@
 
         echo "invalid password";
       }
-   
-
-   
-    
-
 
   }
 
